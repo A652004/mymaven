@@ -27,6 +27,19 @@
     </dependency>
   </dependencies>
 
+<distributionManagement>
+    <repository>
+        <id>central</id>
+        <name>ip-172-31-82-52.ec2.internal-releases</name>
+        <url>http://54.158.52.3:8081/artifactory/lock-down</url>
+    </repository>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>ip-172-31-82-52.ec2.internal-snapshots</name>
+        <url>http://54.158.52.3:8081/artifactory/lock-down</url>
+    </snapshotRepository>
+</distributionManagement>
+  
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
